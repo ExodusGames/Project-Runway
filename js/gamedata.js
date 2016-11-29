@@ -1,0 +1,7 @@
+function CurrentMap() {
+
+}
+
+function Player() {
+	
+}
