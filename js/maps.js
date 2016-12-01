@@ -1,8 +1,8 @@
 function Map(gameData, bgImage) {
 	//cade stuff
-	this.tileSize =
-	this.width =
-	this. height =
+	this.tileSize = 32;
+	this.width = 20;
+	this. height = 20;
 	//taylor stuff
 }
 
@@ -14,3 +14,8 @@ Map.prototype.init = function() {
 			this.tiles[y][x] = undefined;
 		}
 	}
+}
+
+Map.prototype.addTileAtPoint = function(item, point) {
+	this.tiles[point.y][point.x] = item;
+}
