@@ -1,4 +1,4 @@
-function Item(name, sprite, width, height, gameData, movable = false, permeable = false, func = function() {}) {
+function Item(name, sprite, width, height, gameData) {
 	this.name = name;
 	this.sprite = sprite;
 	this.width = width;
@@ -6,11 +6,11 @@ function Item(name, sprite, width, height, gameData, movable = false, permeable 
 
 	this.gameData = gameData;
 
-	this.movable = movable;
+	this.movable = false;
 
 	this.position = {x: 0, y: 0};
 
-	this.permeable = permeable;
+	this.permeable = false;
 
-	this.func = func;
+	this.func = false;
 }
