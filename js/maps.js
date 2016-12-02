@@ -19,3 +19,11 @@ Map.prototype.init = function() {
 Map.prototype.addTileAtPoint = function(item, point) {
 	this.tiles[point.y][point.x] = item;
 }
+
+Map.prototype.draw = function() {
+	for (var y = 0; y < this.height; y++) {
+		for (var x = 0; x < this.width; x++) {
+			this.tiles[y][x].draw();
+		}
+	}
+}
