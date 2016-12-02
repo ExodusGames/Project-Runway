@@ -14,3 +14,8 @@ function Item(name, sprite, width, height, gameData) {
 
 	this.func = false;
 }
+
+Item.prototyoe.draw = function() {
+	var s = this.gameData.tileSize;
+	this.gameData.ctx.drawImage (this.sprite, this.position.x *s , this.position.y *s)
+}

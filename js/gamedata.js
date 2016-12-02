@@ -1,7 +1,4 @@
-function CurrentMap() {
-
-}
-
-function Player() {
-	
+function GameData(player, tilesize){
+	this.player = player
+	this.tileSize = tileSize
 }
