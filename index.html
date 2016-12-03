@@ -6,15 +6,29 @@
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 	<style type="text/css">
+		
+		body {
+			background-color: #d63713;
+		}
 		#canvas {
 			border: 1px solid black;
 			width: 694px;
 			height: 584px;
-			margin-left: 25%;
 		}
 		#title {
 			font-family: 'Poiret One', cursive; 
-			margin-left: 45%;
+			text-align: center;
+		}
+		#gameSpace{
+			margin-left: 30%;
+			margin-right: 29.455em;
+			background-color: white;
+		}
+		h2 {
+			text-align: center;
+		}
+		p {
+			text-align: center;
 		}
 	</style>
 </head>
@@ -22,7 +36,12 @@
 
 <h1 id="title">Project Runway</h1>
 
-<canvas id="canvas"></canvas>
+<div id="gameSpace">
+	<canvas id="canvas"></canvas>
+</div>
+
+<h2>Developers:</h2>
+<p>Jarret Splendorio</p>
 
 <link rel="stylesheet" type="text/css" href="project_runway.js">
 
