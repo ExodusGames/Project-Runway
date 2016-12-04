@@ -12,8 +12,6 @@
 		}
 		#canvas {
 			border: 1px solid black;
-			width: 694px;
-			height: 584px;
 		}
 		#title {
 			font-family: 'Poiret One', cursive; 
@@ -37,20 +35,17 @@
 <h1 id="title">Project Runway</h1>
 
 <div id="gameSpace">
-	<canvas id="canvas"></canvas>
+	<canvas width="694" height="584" id="canvas"></canvas>
 </div>
 
 <h2>Developers:</h2>
 <p>Jarret Splendorio</p>
 
-<link rel="stylesheet" type="text/css" href="project_runway.js">
-
-<script type="text/javascript">
-	
-	var canvas = document.getElementById('canvas');
-	var ctx = gameSpace.getContext("2d");
-
-
-</script>
+<script src="js/game_data.js"></script>
+<script src="js/item.js"></script>
+<script src="js/player.js"></script>
+<script src="js/maps.js"></script>
+<script src="js/map_list.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

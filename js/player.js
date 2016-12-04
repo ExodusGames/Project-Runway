@@ -1,6 +1,7 @@
-function Player(name, sprite) {
-	this.name = name;
-	this.sprite = sprite;
-	this.max-health = 100;
+Player.prototype = new Item("Player", images.player[0], 1, 1);
+Player.prototype.constructor = Player;
+function Player() {
+	this.maxHealth = 100;
 	this.health = 100;
 }
+
