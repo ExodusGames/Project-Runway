@@ -1,6 +1,14 @@
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 
+var div = document.getElementById("gameSpace");
+
+div.height = 584;
+div.width = 694;
+
+canvas.height = div.height;
+canvas.width = div.width; 
+
 gameData.ctx = ctx;
 
 Object.size = function(obj) {
