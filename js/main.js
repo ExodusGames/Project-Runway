@@ -43,3 +43,6 @@ loadImages(images, function() {
 	gameData.map.draw();
 });
 
+document.addEventListener("keyup", function(E) {
+	gameData.map.moveItem(gameData.player, E.keycode)
+})
