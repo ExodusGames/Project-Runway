@@ -3,11 +3,11 @@ var ctx = canvas.getContext("2d");
 
 var div = document.getElementById("gameSpace");
 
-div.height = 584;
-div.width = 694;
+div.style.height = "584px";
+div.style.width = "694px";
 
-canvas.height = div.height;
-canvas.width = div.width; 
+canvas.height = 584;
+canvas.width = 694; 
 
 gameData.ctx = ctx;
 
