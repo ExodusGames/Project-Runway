@@ -1,7 +1,7 @@
 function Map(gameData, bgImage) {
 	this.tileSize = 32;
 	this.width = 20;
-	this.height = 20;
+	this.height = 18;
 	this.tiles = [];
 	this.initialized = false;
 }
@@ -60,18 +60,28 @@ var newPos;
 
 	item.position = newPos;
 
+	if (newPos.y >= 0 && newPos.y <= this.height -1 && newPos.x >= 0 && newPos.x <= this.width -1 )  {
+
 	this.tiles[newPos.y][newPos.x] = item;
 
 	this.tiles[oldPos.y][oldPos.x] = undefined;
 
 	this.drawTileAtPosition(newPos)
 	this.drawTileAtPosition(oldPos)
+
+
+}
+
+else {item.position = oldPos;
+}
+	
+	
 	
 }
 
 Map.prototype.drawTileAtPosition = function(pos) {
 	
-	console.log("gdd")
+	console.log(pos)
 
 	var tile = this.tiles[pos.y][pos.x];
 	var size = tile ? [tile.width, tile.height] : [1, 1];
